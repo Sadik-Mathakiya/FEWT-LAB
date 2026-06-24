@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = prompt("enter number a ")
+        b = prompt("enter number b ")
+        min=a;
+     
+        if(min>b){
+            min=b;
+        
+        }
+        max=0;
+        
+        for(i=0;i<=min;i++){
+            if(a%i==0&&b%i==0){
+                if(max<i){
+                    max=i;
+                }
+            }
+        }
+        document.write("GCD : "+max)
+    </script>
+</body>
+</html>
