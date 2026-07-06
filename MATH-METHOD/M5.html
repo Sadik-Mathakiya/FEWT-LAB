@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        year = prompt("enter year of birth")
+        month = prompt("enter month of birth")
+        dateu = prompt("enter date of birth")
+        year = (date.getFullYear()-year);
+        month=(date.getMonth()-month+1);
+        dateu=(date.getDate()-dateu);
+        if(dateu<1){
+            month--
+        }
+        if(month<1){
+            year--;
+        }
+        document.write("age : "+year +"years"+month+"months"+dateu+"days")
+    </script>
+</body>
+</html>

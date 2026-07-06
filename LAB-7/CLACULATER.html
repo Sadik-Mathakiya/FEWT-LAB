@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <table style="background-color: black;">
+        <tr align="center">
+            <td colspan="4"><input type="text" id="input"></td>
+        </tr>
+        <tr align="center">
+            <td><button onclick="AC()">AC</button></td>
+            <td><button onclick="BS()">BACKSPACE</button></td>
+            <td><button onclick="mytext('%')">%</button></td>
+            <td><button onclick="mytext('/')">/</button></td>
+        </tr>
+        <tr align="center">
+            <td><button onclick="mytext('7')">7</button></td>
+            <td><button onclick="mytext('8')">8</button></td>
+            <td><button onclick="mytext('9')">9</button></td>
+            <td><button onclick="mytext('*')">*</button></td>
+        </tr>
+        <tr align="center">
+            <td><button onclick="mytext('4')">4</button></td>
+            <td><button onclick="mytext('5')">5</button></td>
+            <td><button onclick="mytext('6')">6</button></td>
+            <td><button onclick="mytext('-')">-</button></td>
+        </tr>
+        <tr align="center">
+            <td><button onclick="mytext('3')">3</button></td>
+            <td><button onclick="mytext('2')">2</button></td>
+            <td><button onclick="mytext('1')">1</button></td>
+            <td><button onclick="mytext('+')">+</button></td>
+        </tr>
+        <tr align="center">
+            <td><button onclick="mytext('00')">00</button></td>
+            <td><button onclick="mytext('0')">0</button></td>
+            <td><button onclick="mytext('.')">.</button></td>
+            <td><button onclick="final('=')">=</button></td>
+        </tr>
+    </table>
+<script>
+    function mytext(op){
+        document.getElementById("input").value +=op;
+    
+    }
+    function AC(){
+        document.getElementById("input").value = ""
+    }
+    function BS(){
+        exp = document.getElementById("input").value
+        document.getElementById("input").value = exp.slice(0,-1)
+    }
+    function final(){
+       exp = document.getElementById("input").value
+       document.getElementById("input").value = eval(exp)
+    }
+</script>
+</body>
+</html>
