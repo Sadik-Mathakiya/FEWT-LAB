@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.div{
+    height: 500px;
+    width: 600px;
+    background-color: aquamarine;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+</style>
+<body>
+    <div class="div" id="divbox" onclick="clickevent()" onmouseover="mouseover()" onmousedown="mousedown()" onmouseleave="mouseleave()" onmousemove="mousemove()" onmouseout="mouseout()" onmouseup="mouseup()">
+        <h1>!!!Mouse Events Fires!!!</h1>
+    </div>
+    <script>
+        e = document.getElementById("divbox")
+        function clickevent(){
+            e.innerHTML = "<h1>Click Event Fire</h1>"
+        }
+         function mouseover(){
+            e.innerHTML = "<h1>Over Event Fire</h1>"
+        }
+         function mousedown(){
+            e.innerHTML = "<h1>MouseDown Event Fire</h1>"
+        }
+         function mouseleave(){
+            e.innerHTML = "<h1>MouseLeave Event Fire</h1>"
+        }
+         function mousemove(){
+            e.innerHTML = "<h1>MouseMove Event Fire</h1>"
+        } 
+        function mouseout(){
+            e.innerHTML = "<h1>MouseOut Event Fire</h1>"
+        }
+         function mouseup(){
+            e.innerHTML = "<h1>MouseUp Event Fire</h1>"
+        }
+    </script>
+</body>
+</html>
