@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            background-color: rgb(61, 145, 117);
+        }
+        td{
+            text-align: center;
+        }
+        #edit{
+            background-color: rgb(95, 193, 242);
+        }
+        #delete{
+            background-color: rgb(243, 115, 141);
+        }
+    </style>
+</head>
+<body>
+    <label for="name">Name : </label>
+    <input type="text" id="name">
+    <button onclick="create()">add</button>
+    <br>
+    <br>
+    <table border="2px solid black">
+        <thead>
+            <td>Id</td>
+            <td>UserName</td>
+            <td>action</td>
+        </thead>
+        
+    </table>
+    <script src="./main.js">
+    </script>
+</body>
+</html>
