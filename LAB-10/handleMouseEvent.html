@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        click anywhere
+    </h1>
+    <h1 id="msg"></h1>
+
+<script>
+    document.addEventListener("mousedown",function(e){
+        
+        if(e.button==0){
+            document.getElementById("msg").innerHTML="left click"
+        }
+         if(e.button==2){
+            document.getElementById("msg").innerHTML="right click"
+        }
+        e.preventDefault();
+    });
+    
+</script>
+</body>
+</html>
