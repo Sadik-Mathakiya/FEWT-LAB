@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class crateclass{
+            constructor(company,car){
+                this.company=company;
+                this.car=car;
+            }
+            display(){
+                document.write("Company : "+this.company+"</br>")
+                document.write("Car : "+this.car+"</br></br>")
+            }
+           
+        }
+         let c1 = new crateclass("Hyundai","Creta");
+         let c2 = new crateclass("Toyota","Fortuner");
+         let c3 = new crateclass("BMW","Alpina");
+             c1.display();
+             c2.display();
+             c3.display();
+    </script>
+</body>
+</html>
