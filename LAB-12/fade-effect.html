@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <div
+      class="box"
+      style="height: 500px; width: 500px; background-color: aquamarine"
+    ></div>
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="toggle">fade toggle</button>
+    <button id="fadeto">fade to</button>
+    <script>
+      $('#fadein').click(function () {
+        $('.box').fadeIn(1000)
+      })
+      $('#fadeout').click(function () {
+        $('.box').fadeOut(1000)
+      })
+      $('#toggle').click(function () {
+        $('.box').fadeToggle(1000)
+      })
+      $('#fadeto').click(function () {
+        $('.box').fadeTo(1000, 0.5)
+      })
+    </script>
+  </body>
+</html>
