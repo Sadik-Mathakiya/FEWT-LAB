@@ -12,8 +12,11 @@ import Contact from "./Lab-20/Contact";
 import Layout from "./Lab-20/Layout";
 import UseState from "./Lab-21/UseState";
 import UseEffect from "./Lab-21/UseEffect";
+import A1 from "./Lab-18/P1/A1";
+import { useState } from "react";
 
 function App() {
+  const [name,SetName]=useState("hello")
   return (
     <>
       {/* <P1/> */}
@@ -32,8 +35,9 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      <UseState/>
-      <UseEffect/>
+      {/* <UseState/>
+      <UseEffect/> */}
+      <A1 name={name} SetName={SetName}/>
     </>
   );
 }
