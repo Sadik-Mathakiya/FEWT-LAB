@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
+       button{
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+       }
+       input{
+        height: 50px;
+        width: auto;
+       }
     </style>
 </head>
 <body>
     
-    <table style="background-color: black;">
+    <table style="background-color: black; border-radius: 10px;">
         <tr align="center">
             <td colspan="4"><input type="text" id="input"></td>
         </tr>
         <tr align="center">
             <td><button onclick="AC()">AC</button></td>
-            <td><button onclick="BS()">BACKSPACE</button></td>
+            <td><button onclick="BS()">←</button></td>
             <td><button onclick="mytext('%')">%</button></td>
             <td><button onclick="mytext('/')">/</button></td>
         </tr>
